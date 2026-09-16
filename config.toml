@@ -1,0 +1,51 @@
+baseURL = "https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/"
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "The AO Lab"
+theme = "hugo-ficurinia"
+ copyright = "© The AO Lab"
+summaryLength = 35
+
+[pagination]
+    pagerSize = 8
+
+[params]
+    description = "Photography on Linux with free and open-source tools."
+    [params.author]
+        name = "The AO Lab"
+    logo = "/logo.svg"
+    logoAltText = "The AO Lab logo"
+    svgicon = "/logo.svg"
+    showTags = true
+    showRss = true
+    articleSummary = true
+    imageInArticlePreview = false
+    gridView = false
+    enableSearch = true
+    searchbarEverywhere = false
+    mobileHamburgerNav = true
+    paperCards = false
+    contentWidth = "960px"
+    fontFamily = "JetBrains Mono"
+    titleFontFamily = "JetBrains Mono"
+    monospaceFontFamily = "JetBrains Mono"
+
+[menu]
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+        weight = 10
+    [[menu.icons]]
+        identifier = "instagram"
+        name = "Instagram"
+        url = "https://www.instagram.com/theaolab"
+        weight = 10
+
+[markup]
+    [markup.highlight]
+        noClasses = false
+    [markup.tableOfContents]
+        endLevel = 3
+        ordered = false
+        startLevel = 2
