@@ -1,0 +1,19 @@
+<a
+    {{ if eq (lower .Identifier) "mastodon" }}
+        rel="me"
+    {{ else }}
+        rel="noreferrer"
+    {{ end }}
+    target="_blank"
+    class="nerdlink"
+    href='{{ if or (hasPrefix .URL "http://") (hasPrefix .URL "https://") (hasPrefix .URL "/") }}{{ .URL | safeURL }}{{ else }}{{ .URL | relURL }}{{ end }}'>
+    {{ $icon := index site.Data.supported_icons (lower .Identifier) | safeHTML }}
+    {{ if $icon }}
+        {{ $icon | safeHTML }}
+    {{ else }}
+        {{ .Name }}
+    {{ end }}
+    <span>
+        {{ .Name }}
+    </span>
+</a>

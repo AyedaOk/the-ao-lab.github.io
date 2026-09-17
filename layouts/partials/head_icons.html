@@ -1,0 +1,20 @@
+<link
+    rel="icon"
+    href='{{ strings.TrimPrefix "/" (.Site.Params.favicon | default "favicon.png") | relURL }}'
+/>
+<link
+    rel="shortcut icon"
+    href='{{ strings.TrimPrefix "/" (.Site.Params.faviconIco | default "favicon.ico") | relURL }}'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='{{ strings.TrimPrefix "/" (.Site.Params.appletouch | default "apple-touch-icon.png") | relURL }}'
+/>
+{{ if .Site.Params.svgicon }}
+    <link
+        rel="icon"
+        href='{{ strings.TrimPrefix "/" (.Site.Params.svgicon | default "logo.svg") | relURL }}'
+        type="image/svg+xml"
+    />
+{{ end }}
