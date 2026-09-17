@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
   <title id="title">The AO Lab</title>
-  <rect width="128" height="128" rx="20" fill="#20242b"/>
-  <circle cx="64" cy="64" r="38" fill="none" stroke="#d8b36a" stroke-width="8"/>
-  <circle cx="64" cy="64" r="13" fill="#d8b36a"/>
-  <path d="M20 36h20M88 36h20M20 92h20M88 92h20" stroke="#d8b36a" stroke-width="8" stroke-linecap="round"/>
+  <desc id="desc">An open aperture ring surrounding a terminal prompt.</desc>
+  <rect width="256" height="256" rx="42" fill="#20242b"/>
+  <circle cx="128" cy="128" r="91" fill="none" stroke="#d8b36a" stroke-width="15" stroke-linecap="round" stroke-dasharray="66 134" transform="rotate(-90 128 128)"/>
+  <circle cx="128" cy="128" r="57" fill="#20242b" stroke="#f5f1e8" stroke-width="5"/>
+  <path d="M101 111l25 17-25 17M139 145h31" fill="none" stroke="#d8b36a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

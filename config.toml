@@ -1,4 +1,4 @@
-baseURL = "https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/"
+baseURL = "https://AyedaOk.github.io/the-ao-lab/"
 languageCode = "en"
 defaultContentLanguage = "en"
 title = "The AO Lab"
@@ -17,7 +17,7 @@ summaryLength = 35
     logoAltText = "The AO Lab logo"
     svgicon = "/logo.svg"
     showTags = true
-    showRss = true
+    showRss = false
     articleSummary = true
     imageInArticlePreview = false
     gridView = false
@@ -37,10 +37,25 @@ summaryLength = 35
         url = "/about/"
         weight = 10
     [[menu.icons]]
+        identifier = "youtube"
+        name = "YouTube"
+        url = "https://www.youtube.com/@AyedaOkambawa"
+        weight = 10
+    [[menu.icons]]
         identifier = "instagram"
         name = "Instagram"
         url = "https://www.instagram.com/theaolab"
-        weight = 10
+        weight = 20
+    [[menu.icons]]
+        identifier = "github"
+        name = "GitHub"
+        url = "https://github.com/AyedaOk/the-ao-lab"
+        weight = 30
+    [[menu.icons]]
+        identifier = "rss"
+        name = "RSS"
+        url = "/index.xml"
+        weight = 40
 
 [markup]
     [markup.highlight]
